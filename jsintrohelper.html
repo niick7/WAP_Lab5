@@ -32,7 +32,7 @@
       }
       // 3. maxOfThree(a, b, c)
       function maxOfThree(a, b, c) {
-        return max(a, b) > c ? max(a, b) : c;
+        return max(max(a, b), c);
       }
       // 4. isVowel(character)
       function isVowel(character) {
@@ -99,7 +99,7 @@
         return elem === 3;});
       console.log(c);
       const d = a.reduce(function(prevValue, elem, i, array){
-        return prevValue + elem;
+        return prevValue*elem;
       });
       console.log(d);
       // End 9
